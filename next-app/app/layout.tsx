@@ -18,12 +18,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div>
-          <Link href="/">Home </Link>
-          <Link href="/Scale">Scale </Link>
-          <Link href="/Realiability">Realiability </Link>
+        <div className="mr-36 ml-36">
+          <div className="text-2xl text-center">
+            <Link href="/">Home </Link>
+            {/* <Link href="/snippets">Snippets </Link> */}
+          </div>
+          {children}
         </div>
-        {children}
       </body>
     </html>
   );
